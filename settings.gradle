@@ -1,0 +1,5 @@
+rootProject.name = 'springdemo'
+
+include 'greeting'
+include 'farewell'
+
