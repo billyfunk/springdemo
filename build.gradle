@@ -22,21 +22,21 @@ configure(subprojects.findAll { it.name == 'greeting' || it.name == 'farewell'})
     sourceCompatibility = '1.8'
 
     ext {
-        // set('springCloudServicesVersion', '2.1.0.RELEASE')
+        set('springCloudServicesVersion', '2.1.0.RELEASE')
         set('springCloudVersion', 'Greenwich.RELEASE')
     }
 
     dependencies {
         implementation 'org.springframework.boot:spring-boot-starter-web'
-        implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
-        // implementation 'io.pivotal.spring.cloud:spring-cloud-services-starter-config-client'
-        // implementation 'io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry'
+        // implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+        implementation 'io.pivotal.spring.cloud:spring-cloud-services-starter-config-client'
+        implementation 'io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry'
         testImplementation 'org.springframework.boot:spring-boot-starter-test'
     }
 
     dependencyManagement {
         imports {
-            // mavenBom "io.pivotal.spring.cloud:spring-cloud-services-dependencies:${springCloudServicesVersion}"
+            mavenBom "io.pivotal.spring.cloud:spring-cloud-services-dependencies:${springCloudServicesVersion}"
             mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
         }
     }
