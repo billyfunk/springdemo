@@ -4,8 +4,12 @@ applications:
   memory: 1G
   random-route: true
   path: ./greeting/build/libs/greeting-0.0.1-SNAPSHOT.jar
+  services:
+   - eureka
 - name: farewell-app
   memory: 1G
   random-route: true
   path: ./farewell/build/libs/farewell-0.0.1-SNAPSHOT.jar
+  services:
+   - eureka
 
