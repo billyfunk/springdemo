@@ -2,6 +2,6 @@ rootProject.name = 'springdemo'
 
 include 'greeting'
 include 'farewell'
+include 'gateway'
 rootProject.name = 'springdemo'
-include 'eurekaserver'
 
