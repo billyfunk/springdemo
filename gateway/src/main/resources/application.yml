@@ -1,0 +1,4 @@
+zuul:
+  routes:
+    greeting-app: /greeting/**
+    farewell-app: /farewell/**
