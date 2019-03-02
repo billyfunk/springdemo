@@ -1,8 +1,0 @@
-spring:
-  application:
-    name: greeting
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: ${EUREKA_URI:https://eureka-28c54d4b-ded3-451e-81b5-dc1afab61f65.dev.cfdev.sh}

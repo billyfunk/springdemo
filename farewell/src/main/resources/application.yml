@@ -1,0 +1,26 @@
+spring:
+  cloud:
+    discovery:
+      enabled: false
+eureka:
+  client:
+    enabled: false
+---
+spring:
+  profiles: prod
+  cloud:
+    discovery:
+      enabled: true
+eureka:
+  client:
+    enabled: true
+#---
+#spring:
+#  profiles: kafka
+#  kafka:
+#    producer:
+#      bootstrap-servers: localhost:9092
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+
