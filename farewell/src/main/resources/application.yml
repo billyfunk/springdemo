@@ -14,13 +14,13 @@ spring:
 eureka:
   client:
     enabled: true
-#---
-#spring:
-#  profiles: kafka
-#  kafka:
-#    producer:
-#      bootstrap-servers: localhost:9092
-#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-#      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+---
+spring:
+  profiles: kafka
+  kafka:
+    producer:
+      bootstrap-servers: host.cfdev.sh:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
 
 

@@ -16,14 +16,14 @@ spring:
 eureka:
   client:
     enabled: true
-#---
-#spring:
-#  profiles: kafka
-#  kafka:
-#    consumer:
-#      bootstrap-servers: localhost:9092
-#      group-id: farewell-topic
-#      auto-offset-reset: earliest
-#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-#      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+---
+spring:
+  profiles: kafka
+  kafka:
+    consumer:
+      bootstrap-servers: host.cfdev.sh:9092
+      group-id: farewell-topic
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
 

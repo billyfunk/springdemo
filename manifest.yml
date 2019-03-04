@@ -6,12 +6,16 @@ applications:
   path: ./greeting/build/libs/greeting-0.0.1-SNAPSHOT.jar
   services:
    - eureka
+  env:
+   SPRING_PROFILES_ACTIVE: prod,kafka
 - name: farewell-app
   memory: 1G
   random-route: true
   path: ./farewell/build/libs/farewell-0.0.1-SNAPSHOT.jar
   services:
    - eureka
+  env:
+   SPRING_PROFILES_ACTIVE: kafka,prod
 - name: gateway
   memory: 1G
   path: ./gateway/build/libs/gateway-0.0.1-SNAPSHOT.jar
